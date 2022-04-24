@@ -1,4 +1,16 @@
-body{
-    height: 100vh;
-    background-color: #b3eaff;
+body {
+  height: 100vh;
+  background-color: #13293d;
+}
+
+.formNote {
+  background-color: #16324f;
+}
+
+.titleForm {
+  color: #e9e3e6;
+}
+
+.buttonForm {
+  background-color: #16324f;
 }

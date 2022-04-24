@@ -9,15 +9,15 @@ let savedId = "";
 const noteUI = (note) => {
   const div = document.createElement("div");
   div.innerHTML = `
-  <div class="card card-body rounded-0 animate__animated animate__fadeInUp mb-2">
+  <div class="card card-body rounded-0 animate__animated animate__fadeInUp mb-2" style="background-color: #16324f">
   <div class="d-flex justify-content-between">
-      <h1 class="card-title h3">${note.title}</h1>
+      <h1 class="card-title h3" style="color: #e9e3e6">${note.title}</h1>
       <div>
-          <button class="btn btn-danger delete" data-id="${note._id}">delete</button>
-          <button class="btn btn-secondary update" data-id="${note._id}">update</button>
+          <button class="btn btn-danger delete" style="background-color: #16324f" data-id="${note._id}">Delete</button>
+          <button class="btn btn-primary update" style="background-color: #16324f" data-id="${note._id}">Update</button>
       </div>
   </div>
-  <p>${note.description}</p>
+  <p style="color: #e8f1f2">${note.description}</p>
 </div>
     `;
   const btnDelete = div.querySelector(".delete");
